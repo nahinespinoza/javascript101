@@ -24,13 +24,13 @@ for (let i = 0; i < frameworks.length; i++) {
   const str = frameworks[i];
   const words = str.split("|");
   let [name, date, num_users, popularidad] = words;
-  const objeto = {
+  const frameworkObj  = {
     frameworkName: name.trim(),
     releaseDate: date.trim(),
     usersName: num_users.trim(),
     popularityPercentage: popularidad.trim()
   };
-  addRow(objeto,"data-frameworks");
+  addRow(frameworkObj,"data-frameworks");
 }
 
 /**
